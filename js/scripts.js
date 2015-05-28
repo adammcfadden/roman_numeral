@@ -1,6 +1,16 @@
 var romanNumerals = function(number) {
   var roman = "";
 
+  while(number >= 900) {
+    if(number >= 1000) {
+      roman = roman.concat("M");
+      number -= 1000;
+    } else if(number >= 900) {
+      roman = roman.concat("CM");
+      number -= 900;
+    }
+  }
+
   if(number >= 500) {
     roman = roman.concat("D");
     number -= 500;

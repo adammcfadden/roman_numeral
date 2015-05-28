@@ -64,4 +64,13 @@ describe("romanNumerals", function() {
     expect(romanNumerals(899)).to.equal("DCCCXCIX");
   });
 
+  it("will convert numbers from 900-3999 to roman numerals", function() {
+    expect(romanNumerals(900)).to.equal("CM");
+    expect(romanNumerals(1414)).to.equal("MCDXIV");
+    expect(romanNumerals(2676)).to.equal("MMDCLXXVI");
+    expect(romanNumerals(3752)).to.equal("MMMDCCLII");
+    expect(romanNumerals(3999)).to.equal("MMMCMXCIX");
+  });
+
+
 });
