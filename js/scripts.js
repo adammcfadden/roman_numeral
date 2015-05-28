@@ -27,3 +27,16 @@ var romanNumerals = function(number) {
   }
   return roman;
 }
+
+$(document).ready(function() {
+
+  $("#romannumerals").submit(function(event) {
+    var input = parseInt($("input#input-string").val());
+    var translatedInput = romanNumerals(input);
+    $(".output").text(translatedInput);
+    $("#result").slideToggle("slow");
+    $(".panel").fadeIn("slow");
+    event.preventDefault();
+  });
+
+});

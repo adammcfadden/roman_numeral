@@ -1,0 +1,21 @@
+#result {
+  display: none;
+}
+
+.panel {
+  display: none;
+}
+
+img {
+  max-width: 100%;
+  margin-top: -30px;
+}
+
+@font-face {
+    font-family: 'hellaroman'; /*a name to be used later*/
+    src: url('../fonts/CAESAR.TTF'); /*URL to font*/
+}
+
+.jumbotron {
+  font-family: "hellaroman";
+}
